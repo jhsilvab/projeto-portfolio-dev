@@ -1,0 +1,24 @@
+header{
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  padding-block: 80px;
+  
+}
+
+.container-icons {
+  font: var(--text-sm);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  
+}
+.card-tech {
+  display: flex;
+  align-items: center;
+  gap: 10px;            
+  background-color: var(--gray-400); 
+  padding: 8px 20px;
+  border-radius: 70px;
+}
+
