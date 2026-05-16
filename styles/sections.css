@@ -22,6 +22,7 @@
       inset: 0;
       top: 70%;
       background-color: var(--gray-400);
+      
     }
 
     figcaption {
@@ -47,40 +48,85 @@
   
  
   .card{
-    overflow: hidden;
+    
     position: relative;
     
     height: 155px;
     width: 280px;
     background-color: var(--gray-600);
     padding: 16px;
-  
-    &::before{
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius:12px ;
-      background-color: var(--gray-600);
-      border: 2px solid var(--gray-500);
-      
-    }
+    border: 2px solid var(--gray-500);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna (um abaixo do outro) */
+    justify-content: flex-start; /* Alinha tudo no topo */
+    align-items: flex-start;    /* Alinha tudo à esquerda */
+   gap: 16px; /* Cria o espaço automático entre o ícone e o texto */
     }
 
     figcaption {
-      position: absolute;
-
-      
-      padding: 4px;
-      text-align: left;
+      display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espaço entre o título (h3) e o parágrafo (p) */
       svg{
-    width: 44px;
-    height: 33px;
-    align-items: left;
-    object-fit: cover;}
+      width: 44px;
+      height: 44px; /* Ajustado para ser proporcional */}
       h3{
-        margin-top: 8px;
-        margin-bottom: 6px;
+        margin: 0;
+        color: white;
+        font-size: 1.25rem;
       } 
+      p2 {
+    margin: 0;
+    color: var(--gray-300); /* Cor mais clara para o subtítulo */
+    font-size: 0.875rem;
+}
+  }
+}
+
+#contacts{
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  padding-top: 120px; 
+  padding-bottom: 200px;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  figure{
+    padding: 50px;
+    
+
+    .card-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 400px;  
+    height: 68px;       
+    background-color: var(--gray-400); 
+    padding: 20px;
+    transition: background 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
       
+    svg{
+      display: flex;
+  align-items: center;
+      
+      gap: 16px;
+    }
+    span{
+        display: block;
+        background-image: url(../assets/icons/ArrowUpRight.svg);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      }
+    
   }
 }

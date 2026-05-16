@@ -73,6 +73,10 @@ p2{
   color: var(--red);
 }
 
+.purple {
+  color: var(--purple);
+}
+
 .container{
   max-width: cover;
   max-height: cover;

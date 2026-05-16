@@ -2,10 +2,9 @@ header{
   background-image: url(../assets/Background_Intro.png);
   background-size: cover;
   padding-block: 80px;
-  
-}
-
-.container-icons {
+  text-align: center;
+  padding: 120px; 
+  .container-icons {
   font: var(--text-sm);
   display: flex;
   justify-content: center;
@@ -21,4 +20,8 @@ header{
   padding: 8px 20px;
   border-radius: 70px;
 }
+
+}
+
+
 
