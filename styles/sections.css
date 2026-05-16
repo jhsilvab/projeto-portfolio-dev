@@ -4,9 +4,13 @@
   height: 156px;
   object-fit: cover;
   border-radius: 8px;
-
   }
 
+  
+ .card:hover{
+  border-color: var(--gray-300);
+  box-shadow:  0 0 8px var(--gray-300);
+}
   .card{
     overflow: hidden;
     position: relative;
@@ -15,7 +19,12 @@
     width: 330px;
     background-color: var(--gray-400);
     padding: 16px;
-  
+    
+    /* Transição suave de 0.3 segundos*/
+    border: 1.5px solid transparent; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+ 
     &::before{
       content: "";
       position: absolute;
@@ -120,7 +129,16 @@ a {
   border-radius: 8px;
   margin-bottom: 16px;        /* Espaço entre um card e outro */
   box-sizing: border-box;     /* Garante que o padding não mude a largura do card */
+  
+  
+  /* Transição suave de 0.3 segundos*/
+    border: 1.5px solid transparent; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+  
   cursor: pointer;
+
+
 }
 
 /* O GRUPO DA ESQUERDA (Ícone + Texto) */
@@ -136,6 +154,7 @@ a {
   width: 28px;                /* No CSS, use width e height em vez de size */
   height: 28px;
   object-fit: contain;
+  
 }
 
 /* A SETINHA DA DIREITA */
@@ -153,5 +172,11 @@ a {
   align-items: center;
   line-height: 1; /* Remove excesso de espaço acima/abaixo do texto */
   margin: 0;      /* Garante que nenhuma margem padrão esteja empurrando o texto */
+}
+
+a:hover{
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+  
 }
 }
