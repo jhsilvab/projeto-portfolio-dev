@@ -88,45 +88,70 @@
   background-image: url(../assets/Background_Intro.png);
   background-size: cover;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-top: 120px; 
-  padding-bottom: 200px;
+  padding: 120px 200px; 
+  
+  .title{
+    padding-bottom: 50px;
+  }
+  
+    /* Remove as propriedades de texto herdadas que mudam a fonte dos links */
 a {
   text-decoration: none;
   color: inherit;
-}
-  figure{
-    padding: 50px;
-    
-
-    .card-contacts{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width: 400px;  
-    height: 68px;       
-    background-color: var(--gray-400); 
-    padding: 20px;
-    transition: background 0.3s;
-    border-radius: 8px;
-    cursor: pointer;
-      
-    svg{
-      display: flex;
   align-items: center;
-      
-      gap: 16px;
-    }
-    span{
-        display: block;
-        background-image: url(../assets/icons/ArrowUpRight.svg);
-        width: 20px;
-        height: 20px;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      }
-    
-  }
+}
+
+/* O CARD INDIVIDUAL (O container principal de cada rede) */
+.card-contacts {
+  
+  font: var(--text-sm);
+  display: flex;
+  align-items: center;         /* Centraliza o conteúdo verticalmente */
+  justify-content: space-between; /* Empurra o texto para a esquerda e a seta para a direita */
+  
+  width: 400px;
+  height: 68px;
+  background-color: var(--gray-400);
+  padding: 0 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;        /* Espaço entre um card e outro */
+  box-sizing: border-box;     /* Garante que o padding não mude a largura do card */
+  cursor: pointer;
+}
+
+/* O GRUPO DA ESQUERDA (Ícone + Texto) */
+.contact-info {
+  display: flex;
+  align-items: center; /* Alinha o meio do ícone com o meio do texto */
+  justify-content: center; /* Garante centralização interna caso mude o tamanho */
+  gap: 12px;
+}
+
+/* Ajuste fino na sua imagem */
+.contact-info img {
+  width: 28px;                /* No CSS, use width e height em vez de size */
+  height: 28px;
+  object-fit: contain;
+}
+
+/* A SETINHA DA DIREITA */
+.arrow-right {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../assets/icons/ArrowUpRight.svg); /* Verifique se o caminho da sua seta está correto */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-info span {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1; /* Remove excesso de espaço acima/abaixo do texto */
+  margin: 0;      /* Garante que nenhuma margem padrão esteja empurrando o texto */
+}
 }
