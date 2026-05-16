@@ -31,8 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
-
+O projeto é um site desktop de portfólio para desenvolvedores, com links para projetos e contato do profissional. 
+Esse é um dos desafios práticos da formação Fullstack, um dos conteúdos disponíveis para alunos da Rocketseat. 
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/kPNERRcepj3Bw2ubMldwwc/Portfolio-Dev--Community-?node-id=2148-1745&t=Gn0CCjpCxSUxxegd-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
